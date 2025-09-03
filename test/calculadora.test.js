@@ -13,4 +13,14 @@ describe('Testes da função de soma', function (){
         expect(resultado).to.equal(35);
     });
 
+    it('A função deve ser capaz de somar valores zerados', function(){
+        const resultado = somaDoisNumeros(0,0)
+        expect(resultado).to.equal(0)
+    });
+
+    it('A função deve ser capaz de somar valores positivos e negativos', function(){
+        const resultado = somaDoisNumeros(-15,-20)
+        expect(resultado).to.equal(-35)
+    });
+
 });
